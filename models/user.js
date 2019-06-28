@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       validate: {
         isEmail: {
-          msg: 'Must enter valid email'
+          msg: 'Must enter valid email.'
         }
       }
     },
@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       validate: {
         len: {
           args: [1,99],
-          msg: 'Invalid user name: must be between 1 and 99 characters'
+          msg: 'Invalid user name: must be between 1 and 99 characters.'
         }
       }
     },
@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
       validate: {
         len: {
           args: [8,99],
-          msg: 'Password must be at least eight characters long'
+          msg: 'Password must be at least eight characters long.'
         }
       }
     }
